@@ -65,7 +65,7 @@ My car can change lanes quickly.
  
   
 #### 7.The car is able to change lanes.
-My car can change lanes, here is a screenshot£º
+My car can change lanes, here is a screenshot:
 <div class="test">
 <img src="Docs/img04.png" width="600" />
 </div>
