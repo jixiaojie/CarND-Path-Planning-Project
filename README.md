@@ -45,7 +45,7 @@ My car follows a speed limit of 50 MPH, here is a screenshot£º
   
   
 #### 4.Max Acceleration and Jerk are not Exceeded.
-My car drive below a total acceleration of 10 m/s^2 and a jerk of 10 m/s^3, here is a screenshot: 
+My car drives below a total acceleration of 10 m/s^2 and a jerk of 10 m/s^3, here is a screenshot: 
 <div class="test">
 <img src="Docs/img03.png" width="600" />
 </div>
@@ -56,7 +56,7 @@ My car drive below a total acceleration of 10 m/s^2 and a jerk of 10 m/s^3, here
 
 #### 5.Car does not have collisions.
 My car does not actively collide with other vehicles,   
-but other vehicles occasionally suddenly change lanes and collide.
+but other vehicles occasionally suddenly change lanes and collide me.
   
   
 #### 6.The car stays in its lane, except for the time between changing lanes.
@@ -106,7 +106,7 @@ I copy the codes from [lesson](https://classroom.udacity.com/nanodegrees/nd013/p
                 
 ```
   
-2.Get the 3 coordinates in front of the car, (car_s + 30, d_next_land)£¬(car_s + 60, d_next_land)£¬(car_s + 90, d_next_land).
+2.Get the 3 coordinates in front of the car, (car_s + 30, d_next_land),(car_s + 60, d_next_land),(car_s + 90, d_next_land).
 ```
 
                 vector<double> next_wp0 = getXY(car_s + 30, (2+4*lane), map_waypoints_s, map_waypoints_x, map_waypoints_y);
@@ -129,7 +129,7 @@ I copy the codes from [lesson](https://classroom.udacity.com/nanodegrees/nd013/p
                     ptsy[i] = (shift_x * sin(0 - ref_yaw) + shift_y * cos(0 - ref_yaw));
 ```
   
-4.Fitting a spline from the points obtained in the first two steps.
+4.Fitting a spline polynomial function from the points obtained above steps.
 ```
                 tk::spline s;
                 s.set_points(ptsx, ptsy);
