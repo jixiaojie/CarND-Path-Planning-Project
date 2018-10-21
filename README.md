@@ -45,7 +45,7 @@ My car follows a speed limit of 50 MPH, here is a screenshot£º
   
   
 #### 4.Max Acceleration and Jerk are not Exceeded.
-My car take a total acceleration of 10 m/s^2 and a jerk of 10 m/s^3, here is a screenshot£º  
+My car drive below a total acceleration of 10 m/s^2 and a jerk of 10 m/s^3, here is a screenshot: 
 <div class="test">
 <img src="Docs/img03.png" width="600" />
 </div>
